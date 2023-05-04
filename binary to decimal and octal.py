@@ -1,0 +1,5 @@
+n=int(input("enter a number: "))
+decimal=((n/10)+2)
+octal=oct(n)
+print(decimal)
+print(octal)

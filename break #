@@ -1,0 +1,22 @@
+print("Enter * to exit... ")
+string=[]
+while True:
+    ch=input("Enter any character: ")
+    if(ch=='*'):
+        break
+    string.append(ch)
+lower=upper=schar=num=0
+for i in string:
+    if(i.islower()):
+        lower=lower+1
+    elif(i.isupper()):
+        upper=upper+1
+    elif(i.isdigit()):
+        num=num+1
+    else:
+        schar=schar+1
+
+print("Lowercase = ",lower)
+print("Uppercase = ",upper)
+print("Specialcharacters = ",schar)
+print("Numbers = ",num)
