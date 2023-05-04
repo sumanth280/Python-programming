@@ -1,0 +1,3 @@
+nums = list(map(int, input("Enter the elements of the array separated by space: ").split()))
+peak_index = max(range(len(nums)), key=lambda i: nums[i])
+print(peak_index)

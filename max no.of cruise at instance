@@ -1,0 +1,13 @@
+T = int(input("Enter the value of T: "))
+E = list(map(int, input("Enter the elements of E separated by space: ").split()))
+L = list(map(int, input("Enter the elements of L separated by space: ").split()))
+
+curr_guests = 0
+max_guests = 0
+
+for i in range(T):
+    curr_guests += E[i] - L[i]
+    if curr_guests > max_guests:
+        max_guests = curr_guests
+
+print(f"Maximum number of guests on the cruise at an instance: {max_guests}")

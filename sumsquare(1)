@@ -1,0 +1,13 @@
+def sumsquare(l):
+    odd = sum([num**2 for num in l if num % 2 != 0])
+    even = sum([num**2 for num in l if num % 2 == 0])
+    return [odd, even]
+
+n = int(input("Enter the number of elements: "))
+l = []
+for i in range(n):
+    num = int(input("Enter the element: "))
+    l.append(num)
+
+result = sumsquare(l)
+print(result)

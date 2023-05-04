@@ -1,0 +1,11 @@
+pos_sum, pos_count, neg_sum, neg_count = 0, 0, 0, 0
+while True:
+    num = int(input("Enter the number: "))
+    if num == -1:
+        break
+    pos_sum += num if num >= 0 else 0
+    pos_count += 1 if num >= 0 else 0
+    neg_sum += num if num < 0 else 0
+    neg_count += 1 if num < 0 else 0
+print(f"The average of positive numbers is: {(pos_sum/pos_count):.2f}" if pos_count else "There are no positive numbers entered.")
+print(f"The average of negative numbers is: {(neg_sum/neg_count):.2f}" if neg_count else "There are no negative numbers entered.")

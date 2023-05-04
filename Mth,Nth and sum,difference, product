@@ -1,0 +1,8 @@
+arr = list(map(int, input("Enter the array elements separated by space: ").split()))
+m = int(input("Enter the value of M: "))
+n = int(input("Enter the value of N: "))
+max_m, min_n = sorted(arr, reverse=True)[m-1], sorted(arr)[n-1]
+print(f"{m}th Maximum Number = {max_m} {n}th Minimum Number = {min_n}")
+print(f"Sum = {max_m + min_n}")
+print(f"Difference = {max_m - min_n}")
+print(f"Product = {max_m * min_n}")

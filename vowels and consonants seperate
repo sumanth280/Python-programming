@@ -1,0 +1,7 @@
+word = input("Enter a word: ")
+
+vowels = ''.join(char + " " for char in word if char.lower() in 'aeiou')
+consonants = ''.join(char + " " for char in word if char.isalpha() and char.lower() not in 'aeiou')
+
+print("Consonants:", consonants)
+print("Vowels:", vowels)

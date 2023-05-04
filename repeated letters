@@ -1,0 +1,12 @@
+word = input("Enter the word: ")
+
+repeated_letters = []
+for letter in word:
+    if word.count(letter) > 1 and letter not in repeated_letters:
+        repeated_letters.append(letter)
+
+num_repeated_letters = len(repeated_letters)
+
+print("Number of repeated letters =", num_repeated_letters)
+if num_repeated_letters > 0:
+    print("Repeated letter(s) =", ' '.join(repeated_letters))

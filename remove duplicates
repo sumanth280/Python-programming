@@ -1,0 +1,4 @@
+n = int(input("Enter the number of elements in list: "))
+my_list = [int(input("Enter element{}: ".format(i+1))) for i in range(n)]
+non_duplicate_items = list(set(my_list))
+print("Non-duplicate items:", non_duplicate_items)

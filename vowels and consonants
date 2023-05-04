@@ -1,0 +1,7 @@
+statement = input("Enter a statement: ")
+
+vowels = sum(1 for char in statement if char.lower() in 'aeiou')
+consonants = sum(1 for char in statement if char.isalpha() and char.lower() not in 'aeiou')
+
+print("Number of vowels =", vowels, "Number of consonants =", consonants)
+

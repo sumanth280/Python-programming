@@ -1,0 +1,7 @@
+import statistics
+from collections import Counter
+arr = [int(x) for x in input("Enter the array elements separated by space: ").split()]
+mean = statistics.mean(arr)
+median = statistics.median(arr)
+mode = Counter(arr).most_common(1)[0][0]
+print(f"Mean = {mean}\nMedian = {median}\nMode = {mode}")

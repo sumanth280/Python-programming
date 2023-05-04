@@ -1,0 +1,2 @@
+lower_range, upper_range = int(input("Enter lower range: ")), int(input("Enter upper range: "))
+print([n for n in range(lower_range, upper_range+1) if (int(n**0.5)**2 == n) and (sum(map(int, str(n))) < 10)])

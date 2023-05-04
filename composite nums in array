@@ -1,0 +1,2 @@
+arr = [int(x) for x in input("Enter the array elements separated by space: ").split()]
+print("Number of Composite Numbers =", sum(1 for x in arr if all(x % y != 0 for y in range(2, int(x**0.5)+1)) and x > 1))

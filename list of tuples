@@ -1,0 +1,4 @@
+lower_range = int(input("Enter the lower range: "))
+upper_range = int(input("Enter the upper range: "))
+result = [(x, x**2) for x in range(lower_range, upper_range+1)]
+print(result)

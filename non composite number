@@ -1,0 +1,3 @@
+arr = list(map(int, input("Enter the array elements separated by space: ").split()))
+prime_nums = [x for x in arr if all(x % i != 0 for i in range(2, int(x**0.5)+1)) and x > 1]
+print(prime_nums)
